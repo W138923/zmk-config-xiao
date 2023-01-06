@@ -15,7 +15,7 @@
 
         new_combo {
             bindings = <&trans>;
-            key-positions = <50>;
+            key-positions = <13>;
         };
     };
 
