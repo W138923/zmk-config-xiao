@@ -15,7 +15,7 @@
 
         new_combo {
             bindings = <&trans>;
-            key-positions = <>;
+            key-positions = <0>;
         };
     };
 
@@ -56,7 +56,7 @@
    &kp TAB     &kp Q      &kp W      &kp E          &kp R      &kp T      &kp Y          &kp U      &kp I    &kp O          &kp P  &kp MINUS
  &kp LSHFT     &kp A      &kp S      &kp D          &kp F      &kp G      &kp H          &kp J      &kp K    &kp L  &kp SEMICOLON    &kp SQT
   &kp CAPS     &kp Z      &kp X      &kp C          &kp V      &kp B      &kp N          &kp M  &kp COMMA  &kp DOT       &kp FSLH   &kp BSLH
- &kp LCTRL  &kp LWIN  &kp ENTER  &kp LSHFT  &kp BACKSPACE  &kp SPACE  &kp SPACE  &kp BACKSPACE    &kp TAB    &mo 1          &sl 2  &kp ENTER
+ &kp LCTRL  &kp LWIN  &kp ENTER  &kp LSHFT  &kp BACKSPACE  &kp SPACE  &kp SPACE  &kp BACKSPACE    &kp TAB    &mo 1            &mt  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -72,7 +72,7 @@
 
             bindings = <
        &bt BT_CLR       &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &trans       &trans            &trans             &trans       &trans     &trans
-           &kp F1             &kp F2             &kp F3        &kp F4        &kp F5        &kp F6     &kp F7  &SQL_select          &jsondoc          &json_doc       &trans    &kp F12
+           &kp F1             &kp F2          &json_doc      &jsondoc   &SQL_select        &kp F6     &kp F7  &SQL_select          &jsondoc          &json_doc       &trans    &kp F12
         &kp GRAVE           &kp EXCL             &kp AT      &kp HASH    &kp DOLLAR     &kp PRCNT  &kp CARET     &kp AMPS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &SQL_select  &kp TILDE
  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG   &bootloader        &trans        &trans     &trans    &kp UNDER       &kp KP_PLUS           &kp LBRC     &kp RBRC   &kp PIPE
            &trans             &trans             &trans        &trans        &trans        &trans     &trans       &trans            &trans             &trans       &trans     &trans
