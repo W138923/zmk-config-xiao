@@ -15,7 +15,7 @@
 
         new_combo {
             bindings = <&trans>;
-            key-positions = <0>;
+            key-positions = <>;
         };
     };
 
@@ -31,6 +31,12 @@
             label = "new_macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp H &kp E &kp R &kp E &kp SPACE &kp J &kp S &kp O &kp N &kp D &kp O &kp C &kp UNDER &kp MINUS &kp GT &kp GT &kp SQT &kp I &kp S &kp L &kp A &kp T &kp E &kp S &kp E &kp T &kp V &kp E &kp R &kp S &kp I &kp O &kp N &kp SQT &kp SPACE &kp EQUAL &kp SPACE &kp SQT &kp T &kp R &kp U &kp E &kp SQT>;
+        };
+        json_doc: json_doc {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D &kp SPACE &kp J &kp S &kp O &kp N &kp D &kp O &kp C &kp UNDER &kp MINUS &kp GT &kp GT &kp SQT &kp I &kp S &kp D &kp E &kp L &kp E &kp T &kp E &kp D &kp SQT &kp EQUAL &kp SQT &kp F &kp A &kp L &kp S &kp E &kp SQT>;
         };
     };
 
