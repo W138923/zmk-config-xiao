@@ -11,11 +11,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        new_combo {
-            bindings = <&trans>;
-            key-positions = <0>;
-        };
     };
 
     macros {
@@ -24,12 +19,6 @@
             label = "new_macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp E &kp L &kp E &kp C &kp T &kp SPACE &kp STAR &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE>;
-        };
-        jsondoc: jsondoc {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp H &kp E &kp R &kp E &kp SPACE &kp J &kp S &kp O &kp N &kp D &kp O &kp C &kp UNDER &kp MINUS &kp GT &kp GT &kp SQT &kp I &kp S &kp L &kp A &kp T &kp E &kp S &kp E &kp T &kp V &kp E &kp R &kp S &kp I &kp O &kp N &kp SQT &kp SPACE &kp EQUAL &kp SPACE &kp SQT &kp T &kp R &kp U &kp E &kp SQT>;
         };
     };
 
@@ -45,11 +34,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-   &kp ESC    &kp N1     &kp N2     &kp N3         &kp N4     &kp N5     &kp N6         &kp N7     &kp N8   &kp N9         &kp N0  &kp EQUAL
-   &kp TAB     &kp Q      &kp W      &kp E          &kp R      &kp T      &kp Y          &kp U      &kp I    &kp O          &kp P  &kp MINUS
- &kp LSHFT     &kp A      &kp S      &kp D          &kp F      &kp G      &kp H          &kp J      &kp K    &kp L  &kp SEMICOLON    &kp SQT
-  &kp CAPS     &kp Z      &kp X      &kp C          &kp V      &kp B      &kp N          &kp M  &kp COMMA  &kp DOT       &kp FSLH   &kp BSLH
- &kp LCTRL  &kp LWIN  &kp ENTER  &kp LSHFT  &kp BACKSPACE  &kp SPACE  &kp SPACE  &kp BACKSPACE    &kp TAB    &mo 1         &tog 1  &kp ENTER
+   &kp ESC    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6         &kp N7     &kp N8   &kp N9         &kp N0  &kp EQUAL
+   &kp TAB     &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y          &kp U      &kp I    &kp O          &kp P  &kp MINUS
+ &kp LSHFT     &kp A      &kp S      &kp D      &kp F      &kp G          &kp H          &kp J      &kp K    &kp L  &kp SEMICOLON    &kp SQT
+  &kp CAPS     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N          &kp M  &kp COMMA  &kp DOT       &kp FSLH   &kp BSLH
+ &kp LCTRL  &kp LWIN  &kp ENTER  &kp LSHFT  &kp SPACE  &kp SPACE  &kp BACKSPACE  &kp BACKSPACE    &kp TAB    &mo 1         &tog 1  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -66,7 +55,7 @@
             bindings = <
                          &trans            &trans     &trans  &trans         &trans     &trans       &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_CLR
                     &SQL_select            &kp N1      &kp Q   &kp W          &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0      &trans
-                         &kp F1    &kp LEFT_SHIFT      &kp A   &kp S          &kp D      &kp F      &kp RET      &kp LEFT      &kp DOWN     &kp RIGHT  &kp PAGE_DOWN    &jsondoc
+                         &kp F1    &kp LEFT_SHIFT      &kp A   &kp S          &kp D      &kp F      &kp RET      &kp LEFT      &kp DOWN     &kp RIGHT  &kp PAGE_DOWN      &trans
                          &kp F7  &kp LEFT_CONTROL      &kp Z   &kp X          &kp C      &kp V  &kp KP_PLUS     &kp MINUS     &kp EQUAL      &kp LBKT       &kp RBKT      &trans
  &mt LEFT_CONTROL RIGHT_CONTROL            &trans  &kp ENTER  &trans  &kp BACKSPACE  &kp SPACE       &trans        &trans        &trans        &trans         &trans      &trans
             >;
