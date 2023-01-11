@@ -60,8 +60,8 @@
 
             bindings = <
             &trans            &trans  &trans  &trans     &trans     &trans       &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_CLR
-       &SQL_select            &kp N1   &kp Q   &kp W      &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0      &trans
-            &kp F1    &kp LEFT_SHIFT   &kp A   &kp S      &kp D      &kp F      &kp RET      &kp LEFT      &kp DOWN     &kp RIGHT  &kp PAGE_DOWN      &trans
+           &islate            &trans   &kp Q   &kp W      &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0      &trans
+              &sql    &kp LEFT_SHIFT   &kp A   &kp S      &kp D      &kp F      &kp RET      &kp LEFT      &kp DOWN     &kp RIGHT  &kp PAGE_DOWN      &trans
             &kp F7  &kp LEFT_CONTROL   &kp Z   &kp X      &kp C      &kp V  &kp KP_PLUS     &kp MINUS     &kp EQUAL      &kp LBKT       &kp RBKT      &trans
  &kp RIGHT_CONTROL            &trans  &trans  &trans  &kp SPACE  &kp SPACE       &trans        &trans        &trans        &trans         &trans      &trans
             >;
