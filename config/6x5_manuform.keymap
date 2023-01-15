@@ -26,6 +26,12 @@
             #binding-cells = <0>;
             bindings = <&kp J &kp S &kp O &kp N &kp D &kp O &kp C &kp UNDER &kp MINUS &kp GT &kp GT &kp SQT>;
         };
+        ssql: ssql {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp E &kp L &kp E &kp C &kp T>;
+        };
     };
 
     keymap {
@@ -60,10 +66,10 @@
 
             bindings = <
               &sql            &trans  &trans  &trans     &trans     &trans       &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_CLR
-            &trans           &kp TAB   &kp Q   &kp W      &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0      &trans
+             &ssql           &kp TAB   &kp Q   &kp W      &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0      &trans
              &kp H    &kp LEFT_SHIFT   &kp A   &kp S      &kp D      &kp F      &kp RET      &kp LEFT      &kp DOWN     &kp RIGHT  &kp PAGE_DOWN     &islate
             &kp F7  &kp LEFT_CONTROL   &kp Z   &kp X      &kp C      &kp V  &kp KP_PLUS     &kp MINUS     &kp EQUAL      &kp LBKT       &kp RBKT      &trans
- &kp RIGHT_CONTROL            &trans  &trans  &trans  &kp SPACE  &kp SPACE       &trans        &trans        &trans        &trans         &trans      &trans
+ &kp RIGHT_CONTROL             &none   &none   &none  &kp SPACE  &kp SPACE       &trans        &trans        &trans        &trans         &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
