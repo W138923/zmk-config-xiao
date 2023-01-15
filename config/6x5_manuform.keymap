@@ -16,21 +16,21 @@
     macros {
         sql: sql {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "sql";
             #binding-cells = <0>;
             bindings = <&kp S &kp E &kp L &kp E &kp C &kp T &kp SPACE &kp STAR &kp SPACE &kp F &kp R &kp O &kp M &kp SPACE>;
         };
-        islate: islate {
+        json: json {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "json";
             #binding-cells = <0>;
             bindings = <&kp J &kp S &kp O &kp N &kp D &kp O &kp C &kp UNDER &kp MINUS &kp GT &kp GT &kp SQT>;
         };
-        ssql: ssql {
+        islate: islate {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "islate";
             #binding-cells = <0>;
-            bindings = <&kp S &kp E &kp L &kp E &kp C &kp T>;
+            bindings = <&kp I &kp S &kp L &kp A &kp T &kp E &kp S &kp T &kp V &kp E &kp R &kp S &kp I &kp O &kp N &kp UNDER &kp EQUAL &kp SQT &kp T &kp R &kp U &kp E &kp RIGHT_ARROW>;
         };
     };
 
@@ -65,10 +65,10 @@
             // |     |     |      |      |      |        |                   |       |      |       |       |      |       |
 
             bindings = <
-              &sql            &trans  &trans  &trans     &trans     &trans       &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_CLR
-             &ssql           &kp TAB   &kp Q   &kp W      &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0      &trans
+            &trans            &trans  &trans  &trans     &trans     &trans       &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_CLR
+            &trans           &kp TAB   &kp Q   &kp W      &kp E      &kp R       &kp N6        &kp N7        &kp UP        &kp N9         &kp N0        &sql
              &kp H    &kp LEFT_SHIFT   &kp A   &kp S      &kp D      &kp F      &kp RET      &kp LEFT      &kp DOWN     &kp RIGHT  &kp PAGE_DOWN     &islate
-            &kp F7  &kp LEFT_CONTROL   &kp Z   &kp X      &kp C      &kp V  &kp KP_PLUS     &kp MINUS     &kp EQUAL      &kp LBKT       &kp RBKT      &trans
+            &kp F7  &kp LEFT_CONTROL   &kp Z   &kp X      &kp C      &kp V  &kp KP_PLUS     &kp MINUS     &kp EQUAL      &kp LBKT       &kp RBKT       &json
  &kp RIGHT_CONTROL             &none   &none   &none  &kp SPACE  &kp SPACE       &trans        &trans        &trans        &trans         &trans      &trans
             >;
 
