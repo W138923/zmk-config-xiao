@@ -18,6 +18,36 @@
             key-positions = <58 52 53>;
             layers = <0 1 2>;
         };
+
+        bt4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <56 6>;
+        };
+
+        bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <56 7>;
+        };
+
+        bt1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <56 8>;
+        };
+
+        bt2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <56 9>;
+        };
+
+        bt3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <56 10>;
+        };
+
+        bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <52 53 56 11>;
+        };
     };
 
     macros {
@@ -39,6 +69,12 @@
             #binding-cells = <0>;
             bindings = <&kp I &kp S &kp L &kp A &kp T &kp E &kp S &kp T &kp V &kp E &kp R &kp S &kp I &kp O &kp N &kp UNDER &kp EQUAL &kp SQT &kp T &kp R &kp U &kp E &kp RIGHT_ARROW>;
         };
+        signiture: signiture {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(B) &kp E &kp S &kp T &kp SPACE &kp R &kp E &kp G &kp A &kp R &kp D &kp S &kp COMMA &kp RET &kp LS(E) &kp D &kp W &kp A &kp R &kp D>;
+        };
     };
 
     keymap {
@@ -53,11 +89,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-   &kp ESC  &kp NUMBER_1  &kp NUMBER_2     &kp N3         &kp N4     &kp N5         &kp N6         &kp N7     &kp N8   &kp N9     &kp N0  &kp EQUAL
-   &kp TAB         &kp Q         &kp W      &kp E          &kp R      &kp T          &kp Y          &kp U      &kp I    &kp O      &kp P  &kp MINUS
- &kp LSHFT         &kp A         &kp S      &kp D          &kp F      &kp G          &kp H          &kp J      &kp K    &kp L  &kp COLON    &kp SQT
-  &kp CAPS         &kp Z         &kp X      &kp C          &kp V      &kp B          &kp N          &kp M  &kp COMMA  &kp DOT   &kp FSLH   &kp BSLH
- &kp LCTRL      &kp LWIN     &kp ENTER  &kp LSHFT  &kp BACKSPACE  &kp SPACE  &kp BACKSPACE  &kp BACKSPACE    &kp TAB    &mo 1    &kp DEL  &kp ENTER
+     &kp ESC  &kp NUMBER_1  &kp NUMBER_2     &kp N3         &kp N4     &kp N5         &kp N6         &kp N7     &kp N8   &kp N9     &kp N0  &kp EQUAL
+     &kp TAB         &kp Q         &kp W      &kp E          &kp R      &kp T          &kp Y          &kp U      &kp I    &kp O      &kp P  &kp MINUS
+ &key_repeat         &kp A         &kp S      &kp D          &kp F      &kp G          &kp H          &kp J      &kp K    &kp L  &kp COLON    &kp SQT
+    &kp CAPS         &kp Z         &kp X      &kp C          &kp V      &kp B          &kp N          &kp M  &kp COMMA  &kp DOT   &kp FSLH   &kp BSLH
+   &kp LCTRL      &kp LWIN     &kp ENTER  &kp LSHFT  &kp BACKSPACE  &kp SPACE  &kp BACKSPACE  &kp BACKSPACE    &kp TAB    &mo 1    &kp DEL  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -84,11 +120,11 @@
 
         Game {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 4  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
- &trans  &trans   &kp Q   &kp W   &kp E   &kp R        &trans        &trans        &trans        &trans        &trans      &trans
- &trans  &trans   &kp A   &kp S   &kp D   &kp F        &trans        &trans        &trans        &trans        &trans      &trans
- &trans  &trans   &kp Z   &kp X   &kp C   &kp V        &trans        &trans        &trans        &trans        &trans      &trans
- &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans      &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp Q   &kp W   &kp E   &kp R  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp A   &kp S   &kp D   &kp F  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp Z   &kp X   &kp C   &kp V  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
