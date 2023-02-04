@@ -43,6 +43,34 @@
             bindings = <&bt BT_SEL 4>;
             key-positions = <58 10>;
         };
+
+        atmark {
+            bindings = <&kp AT>;
+            key-positions = <51 1>;
+            layers = <0>;
+        };
+
+        exc {
+            bindings = <&kp EXCL>;
+            key-positions = <51 0>;
+            layers = <0>;
+        };
+
+        aste {
+            bindings = <&kp ASTRK>;
+            key-positions = <51 8>;
+            layers = <0>;
+        };
+
+        braket {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <51 9>;
+        };
+
+        braket2 {
+            bindings = <&kp RPAR>;
+            key-positions = <51 10>;
+        };
     };
 
     macros {
