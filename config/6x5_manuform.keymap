@@ -18,6 +18,11 @@
             key-positions = <58 52 53>;
             timeout-ms = <300>;
         };
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <56 6>;
+        };
     };
 
     macros {
