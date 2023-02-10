@@ -16,7 +16,6 @@
         Layer2 {
             bindings = <&tog 2>;
             key-positions = <58 52 53>;
-            layers = <0 1 2>;
         };
 
         bt0 {
