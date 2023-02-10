@@ -16,36 +16,7 @@
         Layer2 {
             bindings = <&tog 2>;
             key-positions = <58 52 53>;
-        };
-
-        bt0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <58 6>;
-        };
-
-        bt1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <58 7>;
-        };
-
-        bt2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <58 8>;
-        };
-
-        bt3 {
-            bindings = <&bt BT_SEL 3>;
-            key-positions = <58 9>;
-        };
-
-        bt4 {
-            bindings = <&bt BT_SEL 4>;
-            key-positions = <58 10>;
-        };
-
-        btc {
-            bindings = <&bt BT_CLR>;
-            key-positions = <58 11>;
+            timeout-ms = <300>;
         };
     };
 
@@ -101,11 +72,11 @@
             // |     |     |      |      |      |        |                   |       |      |       |       |      |       |
 
             bindings = <
-&trans      &kp F1             &kp F2              &kp F3      &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9        &kp F10   &trans
-&trans     &kp TAB              &kt Q          &kp K_NEXT       &kp E   &kp R   &kp N6    &kp N7    &kp UP     &kp N9         &kp N0     &sql
-&trans    &kp LEFT           &kp DOWN              &kp UP   &kp RIGHT   &kp F  &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &islate
-&trans  &kp K_BACK  &kp K_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &kp K_NEXT   &kp V   &trans    &trans  &kp PLUS   &kp LBKT       &kp RBKT    &json
-&trans      &trans             &trans              &trans      &trans  &trans   &trans    &trans    &trans     &trans         &trans   &trans
+&trans    &kp F1     &kp F2      &kp F3     &kp F4  &kp F5   &kp F6    &kp F7    &kp F8     &kp F9        &kp F10   &trans
+&trans   &kp TAB      &kt Q  &kp K_NEXT      &kp E   &kp R   &kp N6    &kp N7    &kp UP     &kp N9         &kp N0     &sql
+&trans  &kp LEFT   &kp DOWN      &kp UP  &kp RIGHT   &kp F  &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &islate
+&trans    &trans  &kp PG_DN   &kp PG_UP     &trans   &kp V   &trans    &trans  &kp PLUS   &kp LBKT       &kp RBKT    &json
+&trans    &trans     &trans      &trans     &trans  &trans   &trans    &trans    &trans     &trans         &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
