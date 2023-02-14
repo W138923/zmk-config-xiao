@@ -23,6 +23,21 @@
             bindings = <&bt BT_SEL 0>;
             key-positions = <56 6>;
         };
+
+        bt2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <56 7>;
+        };
+
+        bt3 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <56 8>;
+        };
+
+        btc {
+            bindings = <&trans>;
+            key-positions = <56 11>;
+        };
     };
 
     macros {
@@ -89,11 +104,11 @@
 
         Game {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&trans  &trans   &kp Q   &kp W   &kp E   &kp R        &trans        &trans        &trans        &trans        &trans      &trans
-&trans  &trans   &kp A   &kp S   &kp D   &kp F        &trans        &trans        &trans        &trans        &trans      &trans
-&trans  &trans   &kp Z   &kp X   &kp C   &kp V        &trans        &trans        &trans        &trans        &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans      &trans
+&trans            &trans  &trans  &trans     &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans            &trans   &kp Q   &kp W      &kp E   &kp R        &trans        &trans        &trans        &trans        &trans      &trans
+&trans    &kp LEFT_SHIFT   &kp A   &kp S      &kp D   &kp F        &trans        &trans        &trans        &trans        &trans      &trans
+&trans  &kp LEFT_CONTROL   &kp Z   &kp X      &kp C   &kp V        &trans        &trans        &trans        &trans        &trans      &trans
+&trans            &trans  &trans  &trans  &kp SPACE  &trans        &trans        &trans        &trans        &trans        &trans      &trans
             >;
         };
     };
