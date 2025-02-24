@@ -17,28 +17,33 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <58 57 0>;
         };
+
+        semi_colon {
+            bindings = <&kt SEMICOLON>;
+            key-positions = <51 34>;
+        };
     };
 
     macros {
-        email_end: email_end {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp E &kp S &kp T &kp SPACE &kp LS(R) &kp E &kp G &kp A &kp R &kp D &kp S &kp COMMA &kp RET &kp LS(K) &kp O &kp H &kp E &kp I &kp SPACE &kp LS(E) &kp D &kp W &kp A &kp R &kp D &kp SPACE &kp LS(Y) &kp A &kp M &kp A &kp D &kp A>;
-            label = "EMAIL_END";
-        };
-
-        email1: email1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp S &kp N6 &kp E &kp Y &kp U &kp A &kp F &kp C &kp T &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL1";
-        };
-
         email2: email2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Q &kp N1 &kp U &kp H &kp B &kp F &kp C &kp T &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL2";
+        };
+
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp UNDER &kp N1 &kp N3 &kp N8 &kp F &kp K &kp Q &kp N9 &kp N2 &kp N3>;
+            label = "PASS";
+        };
+
+        ldap: ldap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp A &kp M &kp A &kp D &kp A &kp E &kp D &kp W &kp A &kp R &kp D>;
+            label = "LDAP";
         };
     };
 
@@ -75,8 +80,8 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp F7   &kp F8    &kp F8        &kp F10    &kp F10        &trans
 &kt F1      &kp F2        &kt F3        &kt F4        &kp F5        &kp F6        &kp F7   &kp F8    &kp UP_ARROW  &kp F10    &kp F11        &kt F12
-&email1     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp F         &kp RET  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
-&email2     &trans        &kp PG_DN     &kp PG_UP     &trans        &kp V         &trans   &trans    &kp PLUS      &kp LBKT   &kp RBKT       &trans
+&ldap       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp F         &kp RET  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
+&email2     &pass         &kp PG_DN     &kp PG_UP     &trans        &kp V         &trans   &trans    &kp PLUS      &kp LBKT   &kp RBKT       &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans   &trans    &trans        &trans     &trans         &trans
             >;
 
