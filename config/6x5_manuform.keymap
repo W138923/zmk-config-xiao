@@ -32,7 +32,7 @@
             label = "EMAIL2";
         };
 
-        pass: pass {
+        nftp: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(W) &kp UNDER &kp N1 &kp N3 &kp N8 &kp F &kp K &kp Q &kp N9 &kp N2 &kp N3>;
@@ -81,7 +81,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp F7   &kp F8    &kp F8        &kp F10    &kp F10        &trans
 &kt F1      &kp F2        &kt F3        &kt F4        &kp F5        &kp F6        &kp F7   &kp F8    &kp UP_ARROW  &kp F10    &kp F11        &kt F12
 &ldap       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp F         &kp RET  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
-&email2     &pass         &kp PG_DN     &kp PG_UP     &trans        &kp V         &trans   &trans    &kp PLUS      &kp LBKT   &kp RBKT       &trans
+&email2     &nftp         &kp PG_DN     &kp PG_UP     &trans        &kp V         &trans   &trans    &kp PLUS      &kp LBKT   &kp RBKT       &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans   &trans    &trans        &trans     &trans         &trans
             >;
 
